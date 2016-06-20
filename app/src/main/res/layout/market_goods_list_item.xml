@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="100dip"
+    android:background="@color/white" >
+
+    <com.aibaide.xuanbao.image.NetImageView
+        android:id="@+id/goods_img"
+        android:layout_width="84dip"
+        android:layout_height="84dip"
+        android:layout_marginLeft="12dip"
+        android:layout_marginTop="10dip"
+        android:scaleType="centerCrop" >
+    </com.aibaide.xuanbao.image.NetImageView>
+
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="106dip"
+        android:layout_marginTop="8dip"
+        android:textColor="@color/itry_list_goods_name"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/goods_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="106dip"
+        android:layout_marginTop="30dip"
+        android:textColor="@color/itry_list_dome_color"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/goods_integral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="106dip"
+        android:textColor="@color/itry_list_dome_color"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/goods_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dip"
+        android:layout_marginLeft="155dip"
+        android:textColor="@color/itry_list_dome_color"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="15dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.aibaide.xuanbao.image.NetImageView
+            android:id="@+id/img_goods"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_goots_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:textColor="@color/tab_base"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

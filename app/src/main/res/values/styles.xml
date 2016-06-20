@@ -1,0 +1,130 @@
+<resources>
+
+
+
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    -<style parent="@android:style/Theme.Dialog" name="loading_dialog">
+
+    <item name="android:windowFrame">@null</item>
+
+    <!-- 边框 -->
+
+
+    <item name="android:windowIsFloating">true</item>
+
+    <!-- 是否浮现在activity之上 -->
+
+
+    <item name="android:windowIsTranslucent">true</item>
+
+    <!-- 半透明 -->
+
+
+    <item name="android:windowNoTitle">true</item>
+
+    <!-- 无标题 -->
+
+
+    <item name="android:windowBackground">@color/black</item>
+
+    <!-- 背景透明 -->
+
+
+    <item name="android:backgroundDimEnabled">true</item>
+
+    <!-- 模糊 -->
+
+
+</style>
+
+
+    -<style parent="@android:style/Theme.Dialog" name="none_dialog">
+
+    <item name="android:windowFrame">@null</item>
+
+    <item name="android:windowIsFloating">false</item>
+
+    <item name="android:windowIsTranslucent">true</item>
+
+    <item name="android:windowNoTitle">true</item>
+
+    <item name="android:background">@null</item>
+
+    <item name="android:windowBackground">@null</item>
+
+    <item name="android:backgroundDimEnabled">true</item>
+
+</style>
+
+
+    -<style name="popAnimationDown2Up">
+
+    <item name="android:windowEnterAnimation">@anim/anim_bottom_in</item>
+
+    <item name="android:windowExitAnimation">@anim/anim_bottom_out</item>
+
+</style>
+
+
+    -<style parent="android:style/Theme.Dialog" name="Dialog">
+
+    <item name="android:windowNoTitle">true</item>
+
+    <item name="android:windowFrame">@null</item>
+
+    <item name="android:windowIsFloating">true</item>
+
+    <item name="android:windowIsTranslucent">false</item>
+
+    <item name="android:background">@drawable/my_dialog_background</item>
+
+    <item name="android:windowBackground">@drawable/my_dialog_background</item>
+
+</style>
+
+
+    -<style parent="android:style/Theme.Dialog" name="Dialog_Full_Screen">
+
+    <item name="android:windowNoTitle">true</item>
+
+    <item name="android:windowFrame">@null</item>
+
+    <item name="android:windowIsFloating">true</item>
+
+    <item name="android:windowIsTranslucent">false</item>
+
+    <item name="android:windowBackground">@drawable/full_screen_dialog_back</item>
+
+</style>
+
+
+    -<style name="popAnimationLeft2Right">
+
+    <item name="android:windowEnterAnimation">@anim/slide_in_left</item>
+
+    <item name="android:windowExitAnimation">@anim/slide_out_right</item>
+
+</style>
+
+
+    -<style name="SwipeFling">
+
+    <item name="rotation_degrees">15</item>
+
+    <item name="min_adapter_stack">6</item>
+
+    <item name="max_visible">4</item>
+
+</style>
+
+
+    -<style  name="RatingBarStyle">
+
+    <item name="android:progressDrawable">@drawable/rating_style</item>
+
+</style>
+</resources>

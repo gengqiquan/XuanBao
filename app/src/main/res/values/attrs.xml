@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwipeFlingAdapterView">
+        <attr name="SwipeFlingStyle" format="reference" />
+        <attr name="rotation_degrees" format="float" />
+        <attr name="min_adapter_stack" format="integer" />
+        <attr name="max_visible" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <declare-styleable name="CardView">
+- <!--   Background color for CardView.  -->
+        <attr name="cardBackgroundColor" format="color" />
+- <!--   Corner radius for CardView.  -->
+        <attr name="cardCornerRadius" format="dimension" />
+- <!--   Elevation for CardView.  -->
+        <attr name="cardElevation" format="dimension" />
+- <!--   Maximum Elevation for CardView.  -->
+        <attr name="cardMaxElevation" format="dimension" />
+- <!--   Add padding in API v21+ as well to have the same measurements with previous versions.  -->
+        <attr name="cardUseCompatPadding" format="boolean" />
+- <!--   Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.  -->
+        <attr name="cardPreventCornerOverlap" format="boolean" />
+- <!--   Inner padding between the edges of the Card and children of the CardView.  -->
+        <attr name="contentPadding" format="dimension" />
+- <!--   Inner padding between the left edge of the Card and children of the CardView.  -->
+        <attr name="contentPaddingLeft" format="dimension" />
+- <!--   Inner padding between the right edge of the Card and children of the CardView.  -->
+        <attr name="contentPaddingRight" format="dimension" />
+- <!--   Inner padding between the top edge of the Card and children of the CardView.  -->
+        <attr name="contentPaddingTop" format="dimension" />
+- <!--   Inner padding between the bottom edge of the Card and children of the CardView.  -->
+        <attr name="contentPaddingBottom" format="dimension" />
+    </declare-styleable>
+
+</resources>

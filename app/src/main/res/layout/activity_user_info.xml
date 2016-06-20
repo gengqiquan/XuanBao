@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:layout_marginTop="8dip"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dip"
+            android:text="@string/header"
+            android:textColor="@color/itry_list_goods_name" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="102dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dip"
+            android:orientation="vertical" >
+
+
+            <com.aibaide.xuanbao.views.RoundImageView
+                android:id="@+id/photo"
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:layout_centerInParent="true"
+             >
+            </com.aibaide.xuanbao.views.RoundImageView>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="7dip"
+            android:layout_height="16dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/arrow2right_gray_small" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_account"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:layout_marginTop="8dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dip"
+            android:text="@string/account"
+            android:textColor="@color/itry_list_goods_name" />
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dip"
+            android:textColor="@color/itry_list_goods_name" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:layout_marginTop="8dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dip"
+            android:text="@string/user_name"
+            android:textColor="@color/itry_list_goods_name" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dip"
+            android:ellipsize="end"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:textColor="@color/itry_list_goods_name" />
+
+        <View
+            android:layout_width="7dip"
+            android:layout_height="16dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/arrow2right_gray_small" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_qr_code"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:layout_marginTop="8dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dip"
+            android:text="@string/qr_code"
+            android:textColor="@color/itry_list_goods_name" />
+
+        <View
+            android:id="@+id/qr_code"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dip"
+            android:background="@drawable/icon_qr_code_detail" />
+
+        <View
+            android:layout_width="7dip"
+            android:layout_height="16dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/arrow2right_gray_small" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_sex"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:layout_marginTop="8dp"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dip"
+            android:text="@string/sex"
+            android:textColor="@color/itry_list_goods_name" />
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dip"
+            android:textColor="@color/itry_list_goods_name" />
+
+        <View
+            android:layout_width="7dip"
+            android:layout_height="16dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/arrow2right_gray_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dip"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dip"
+            android:text="@string/birthday"
+            android:textColor="@color/itry_list_goods_name" />
+
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dip"
+            android:textColor="@color/itry_list_goods_name" />
+
+        <View
+            android:layout_width="7dip"
+            android:layout_height="16dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/arrow2right_gray_small" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dip"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_post_address"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dip"
+            android:text="@string/my_post_address"
+            android:textColor="@color/itry_list_goods_name" />
+
+        <View
+            android:layout_width="7dip"
+            android:layout_height="16dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/arrow2right_gray_small" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/line" />
+
+</LinearLayout>

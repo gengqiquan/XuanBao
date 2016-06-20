@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_back" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="130dip"
+        android:layout_height="130dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98dip"
+        android:background="@drawable/header_back" >
+
+        <ImageView
+            android:layout_width="110dip"
+            android:layout_height="110dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/header_def" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="18dip"
+        android:layout_marginRight="18dip"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/login_edit_back" >
+
+        <EditText
+            android:id="@+id/mobilephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dip"
+            android:layout_marginTop="10dip"
+            android:background="@null"
+            android:hint="@string/mobilephone"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/check_code"
+            android:layout_width="80dip"
+            android:layout_height="24dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/wheel_white_back"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/get_check_code"
+            android:textColor="@color/login_def_color"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="22dip"
+            android:background="@null"
+            android:hint="@string/input_check_code"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/edit"
+        android:layout_marginLeft="18dip"
+        android:layout_marginRight="18dip"
+        android:layout_marginTop="40dip"
+        android:background="@drawable/round_blue_back"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/protocol_img"
+        android:layout_width="16dp"
+        android:layout_height="16dip"
+        android:layout_below="@+id/bt_login"
+        android:layout_marginLeft="18dip"
+        android:layout_marginTop="22dip"
+        android:background="@drawable/icon_protocol_check" />
+
+    <TextView
+        android:id="@+id/protocol_bt"
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:layout_below="@+id/bt_login"
+        android:layout_marginLeft="45dip"
+        android:layout_marginTop="20dip"
+        android:gravity="center_vertical"
+        android:text="@string/register_protocol"
+        android:textColor="@color/gold_gray"
+        android:textSize="12sp" />
+
+</RelativeLayout>

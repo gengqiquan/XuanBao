@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="base_title_bar">#59d1fe</color>
+    <color name="white">#ffffff</color>
+    <color name="gold_gray">#6e6e6e</color>
+    <color name="black">#000000</color>
+    <color name="blue">#2ccddc</color>
+    <color name="gray_main_tab">#303030</color>
+    <color name="main_tab_line">#dddddd</color>
+    <color name="line">#dddddd</color>
+    <color name="switch_check">#48dc64</color>
+    <color name="switch_defult">#f0f0f0</color>
+    <color name="login_def_color">#888888</color>
+    <color name="background">#eeeeee</color>
+    <color name="none">#00000000</color>
+    <color name="lotter_failure">#a0636363</color>
+    <color name="tab_check">#2ccddc</color>
+    <color name="tab_base">#222222</color>
+    <color name="itry_list_goods_name">#444444</color>
+    <color name="itry_list_white_back">#52ffffff</color>
+    <color name="itry_list_dome_color">#888888</color>
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="logistics">#029bcd</color>
+    <color name="orange_ff7e00">#ff7e00</color>
+    <color name="blue_79bcdf">#79bcdf</color>
+    <color name="gray_48_a99">#99484848</color>
+    <color name="gray4">#444444</color>
+    <color name="gray6">#666666</color>
+    <color name="gray8">#888888</color>
+    <color name="gray9">#999999</color>
+    <color name="blue_125151">#125151</color>
+    <color name="pink_fd7f7e">#fd7f7e</color>
+    <color name="yellow_eeed85">#eeed85</color>
+    <color name="green_14cc6d">#14cc6d</color>
+    <color name="green_a8edca">#a8edca</color>
+    <color name="blue_e0fcfe">#e0fcfe</color>
+
+</resources>

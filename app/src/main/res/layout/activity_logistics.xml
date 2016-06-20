@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dip"
+            android:layout_marginTop="8dip"
+            android:background="@color/white" >
+
+            <com.aibaide.xuanbao.image.NetImageView
+                android:id="@+id/goods_img"
+                android:layout_width="84dip"
+                android:layout_height="84dip"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="10dip"
+                android:scaleType="centerInside" >
+            </com.aibaide.xuanbao.image.NetImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="106dip"
+                android:layout_marginTop="15dip"
+                android:text="商品名称："
+                android:textColor="@color/itry_list_goods_name"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="106dip"
+                android:layout_marginTop="43dip"
+                android:text="承运来源："
+                android:textColor="@color/itry_list_goods_name"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="106dip"
+                android:layout_marginTop="71dip"
+                android:text="快递单号："
+                android:textColor="@color/itry_list_goods_name"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="190dip"
+                android:layout_marginTop="15dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/itry_list_dome_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/order_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="190dip"
+                android:layout_marginTop="43dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/itry_list_dome_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/order_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="190dip"
+                android:layout_marginTop="71dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/itry_list_dome_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:layout_marginTop="8dip"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:text="物流追踪"
+                android:textColor="@color/itry_list_goods_name"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/line" />
+        </RelativeLayout>
+
+        <com.aibaide.xuanbao.refresh.SListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:divider="@null" />
+
+        <View
+            android:id="@+id/msg"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/img_no_logistics"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

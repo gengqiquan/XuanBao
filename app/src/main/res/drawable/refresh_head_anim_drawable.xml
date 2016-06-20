@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item android:duration="40">
+        <layer-list>
+            <item android:drawable="@drawable/r1"/>
+        </layer-list>
+    </item>
+    <item android:duration="40">
+        <layer-list>
+            <item android:drawable="@drawable/r2"/>
+        </layer-list>
+    </item>
+    <item android:duration="40">
+        <layer-list>
+            <item android:drawable="@drawable/r3"/>
+        </layer-list>
+    </item>
+    <item android:duration="40">
+        <layer-list>
+            <item android:drawable="@drawable/r4"/>
+        </layer-list>
+    </item>
+    <item android:duration="40">
+        <layer-list>
+            <item android:drawable="@drawable/r5"/>
+        </layer-list>
+    </item>
+    <item android:duration="40">
+        <layer-list>
+            <item android:drawable="@drawable/r6"/>
+        </layer-list>
+    </item>
+    <item android:duration="40">
+        <layer-list>
+            <item android:drawable="@drawable/r7"/>
+        </layer-list>
+    </item>
+    <item android:duration="40">
+        <layer-list>
+            <item android:drawable="@drawable/r8"/>
+        </layer-list>
+    </item>
+    <item android:duration="40">
+        <layer-list>
+            <item android:drawable="@drawable/r9"/>
+        </layer-list>
+    </item>
+    <item android:duration="40">
+        <layer-list>
+            <item android:drawable="@drawable/r10"/>
+        </layer-list>
+    </item>
+    <item android:duration="40">
+        <layer-list>
+            <item android:drawable="@drawable/r11"/>
+        </layer-list>
+    </item>
+    <item android:duration="40">
+        <layer-list>
+            <item android:drawable="@drawable/r12"/>
+        </layer-list>
+    </item>
+
+</animation-list>

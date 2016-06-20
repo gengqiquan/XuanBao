@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="87dip"
+            android:background="@color/line" />
+
+        <View
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dip"
+            android:background="@drawable/msg_activity" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="87dip"
+            android:layout_marginTop="13dip"
+            android:gravity="center_vertical"
+            android:text="活动消息"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dip"
+            android:layout_marginTop="17dip"
+            android:textColor="@color/itry_list_dome_color"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="87dip"
+            android:layout_marginRight="50dip"
+            android:layout_marginTop="45dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="暂无消息"
+            android:textColor="@color/itry_list_dome_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bt2"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="87dip"
+            android:background="@color/line" />
+
+        <View
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dip"
+            android:background="@drawable/msg_time" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="87dip"
+            android:layout_marginTop="13dip"
+            android:gravity="center_vertical"
+            android:text="定时提醒"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dip"
+            android:layout_marginTop="17dip"
+            android:textColor="@color/itry_list_dome_color"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="87dip"
+            android:layout_marginRight="50dip"
+            android:layout_marginTop="45dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="暂无消息"
+            android:textColor="@color/itry_list_dome_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bt3"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="87dip"
+            android:background="@color/line" />
+
+        <View
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dip"
+            android:background="@drawable/msg_order" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="87dip"
+            android:layout_marginTop="13dip"
+            android:gravity="center_vertical"
+            android:text="订单信息"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/time3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dip"
+            android:layout_marginTop="17dip"
+            android:textColor="@color/itry_list_dome_color"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="87dip"
+            android:layout_marginRight="50dip"
+            android:layout_marginTop="45dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="暂无消息"
+            android:textColor="@color/itry_list_dome_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

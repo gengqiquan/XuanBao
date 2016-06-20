@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90000000" >
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="243dp"
+        android:layout_height="285dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/img_trade_integral_back"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="88dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="请输入兑换码"
+                android:textColor="@color/itry_list_goods_name"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/paste"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/img_paste_back"
+                android:gravity="center"
+                android:padding="5dp"
+                android:shadowColor="@color/black"
+                android:shadowDx="-100"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:text="粘贴"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/ed_trade"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="#eeeeee"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/bt_trade"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="49dp"
+            android:background="@color/tab_check"
+            android:gravity="center"
+            android:text="确认兑换"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

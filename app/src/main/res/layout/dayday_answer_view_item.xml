@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="87dp" >
+
+    <com.aibaide.xuanbao.views.CheckView
+        android:id="@+id/chose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_marginLeft="44dp"
+       android:layout_marginRight="44dp"
+       android:background="@drawable/dayday_answer_view_background"
+       android:layout_marginBottom="32dp"/>
+
+</FrameLayout>

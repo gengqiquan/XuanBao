@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="@color/white" >
+
+        <com.aibaide.xuanbao.views.RoundImageView
+            android:id="@+id/photo"
+            android:layout_width="44dip"
+            android:layout_height="44dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+        />
+
+        <ImageView
+            android:id="@+id/house"
+            android:layout_width="22dip"
+            android:layout_height="22dip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dip"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="68dip"
+            android:layout_marginRight="120dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <com.aibaide.xuanbao.image.NetImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="180dip"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dip"
+            android:textColor="@color/itry_list_dome_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dip"
+            android:text="查看全部评论"
+            android:textColor="@color/itry_list_dome_color"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dip"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/com1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="18dip"
+            android:layout_marginTop="5dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/com2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="18dip"
+            android:layout_marginTop="5dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/com3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="18dip"
+            android:layout_marginTop="5dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="9dip" />
+
+</LinearLayout>

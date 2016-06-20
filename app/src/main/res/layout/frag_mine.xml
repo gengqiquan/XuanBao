@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:layout_marginBottom="48dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dip"
+                android:background="@color/tab_check" >
+
+                <com.aibaide.xuanbao.views.RoundImageView
+                    android:id="@+id/photo"
+                    android:layout_width="64dip"
+                    android:layout_height="64dip"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="48dp" >
+                </com.aibaide.xuanbao.views.RoundImageView>
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="113dp"
+                    android:layout_marginTop="74dp"
+                    android:ellipsize="end"
+                    android:maxLength="12"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/integral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="113dp"
+                    android:layout_marginTop="100dp"
+                    android:text="积分 0"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <View
+                    android:id="@+id/arrow"
+                    android:layout_width="22dip"
+                    android:layout_height="23dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dip"
+                    android:layout_marginTop="67dp"
+                    android:background="@drawable/arrow2right_white" />
+
+                <include
+                    android:id="@+id/message"
+                    android:layout_width="34dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="11dp"
+                    layout="@layout/message_bt_layoutl" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dip"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dip"
+                    android:layout_marginTop="10dip"
+                    android:padding="0dip"
+                    android:text="@string/my_order"
+                    android:textColor="@color/itry_list_goods_name"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/try1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dip"
+                        android:drawablePadding="5dip"
+                        android:drawableTop="@drawable/icon_order1"
+                        android:gravity="center"
+                        android:text="@string/getted"
+                        android:textColor="@color/gold_gray"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/try2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dip"
+                        android:drawableTop="@drawable/icon_order2"
+                        android:gravity="center"
+                        android:text="@string/not_get"
+                        android:textColor="@color/gold_gray"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/try3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dip"
+                        android:drawableTop="@drawable/icon_order3"
+                        android:gravity="center"
+                        android:text="@string/no_pay"
+                        android:textColor="@color/gold_gray"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/try4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dip"
+                        android:drawablePadding="5dip"
+                        android:drawableTop="@drawable/icon_order4"
+                        android:gravity="center"
+                        android:text="@string/lose_useing"
+                        android:textColor="@color/gold_gray"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_house"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="@dimen/lableTopDimen"
+                android:background="@color/white" >
+
+                <View
+                    android:layout_width="7dip"
+                    android:layout_height="16dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/arrow2right_gray_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dip"
+                    android:drawableLeft="@drawable/icon_house"
+                    android:drawablePadding="15dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/my_house"
+                    android:textColor="@color/itry_list_goods_name"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_ta_say"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="@dimen/lableTopDimen"
+                android:background="@color/white" >
+
+                <View
+                    android:layout_width="7dip"
+                    android:layout_height="16dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/arrow2right_gray_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dip"
+                    android:drawableLeft="@drawable/icon_my_ta_say"
+                    android:drawablePadding="15dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/my_ta_say"
+                    android:textColor="@color/itry_list_goods_name"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_virtual"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/white" >
+
+                <View
+                    android:layout_width="7dip"
+                    android:layout_height="16dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/arrow2right_gray_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dip"
+                    android:drawableLeft="@drawable/icon_my_virtual"
+                    android:drawablePadding="15dip"
+                    android:gravity="center_vertical"
+                    android:text="我的券吧"
+                    android:textColor="@color/itry_list_goods_name"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="53dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_integral"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/white" >
+
+                <View
+                    android:layout_width="7dip"
+                    android:layout_height="16dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/arrow2right_gray_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dip"
+                    android:drawableLeft="@drawable/icon_my_integral"
+                    android:drawablePadding="15dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/my_integral"
+                    android:textColor="@color/itry_list_goods_name"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="53dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/taste_guide"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="@dimen/lableTopDimen"
+                android:background="@color/white" >
+
+                <View
+                    android:layout_width="7dip"
+                    android:layout_height="16dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/arrow2right_gray_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dip"
+                    android:drawableLeft="@drawable/icon_guide"
+                    android:drawablePadding="15dip"
+                    android:gravity="center_vertical"
+                    android:text="体验指南"
+                    android:textColor="@color/itry_list_goods_name"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/suggestion"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/white" >
+
+                <View
+                    android:layout_width="7dip"
+                    android:layout_height="16dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/arrow2right_gray_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dip"
+                    android:drawableLeft="@drawable/icon_suggestion"
+                    android:drawablePadding="15dip"
+                    android:gravity="center_vertical"
+                    android:text="意见帮助"
+                    android:textColor="@color/itry_list_goods_name"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="53dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@color/white" >
+
+                <View
+                    android:layout_width="7dip"
+                    android:layout_height="16dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/arrow2right_gray_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dip"
+                    android:drawableLeft="@drawable/icon_setting"
+                    android:drawablePadding="15dip"
+                    android:gravity="center_vertical"
+                    android:text="设置"
+                    android:textColor="@color/itry_list_goods_name"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="53dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/line" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

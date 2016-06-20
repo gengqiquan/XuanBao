@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="8dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:text="商品评分"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="15sp" />
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            style="@style/RatingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="17dip"
+            android:layout_marginLeft="25dip"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:textColor="@color/itry_list_dome_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/report_bt"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="8dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/report_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dip"
+            android:text="请填写体验报告"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <View
+            android:id="@+id/report_img"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dip"
+            android:background="@drawable/icon_report_no" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="产品未领到，无法写Ta说"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="200dip"
+            android:layout_height="200dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/write_tasay_no_data_back" />
+
+        <TextView
+            android:id="@+id/bt"
+            android:layout_width="60dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/img_roung_bt_back"
+            android:gravity="center"
+            android:text="去尝鲜"
+            android:textColor="@color/itry_list_dome_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="276dp"
+        android:layout_centerVertical="true"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</RelativeLayout>

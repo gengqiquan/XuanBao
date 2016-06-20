@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dip" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dip"
+            android:background="@color/white" />
+
+        <com.aibaide.xuanbao.image.NetImageView
+            android:id="@+id/market_img"
+            android:layout_width="110dip"
+            android:layout_height="80dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="20dip"
+            android:scaleType="centerCrop" >
+        </com.aibaide.xuanbao.image.NetImageView>
+
+        <TextView
+            android:id="@+id/market_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dip"
+            android:layout_marginTop="18dip"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="120dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/c1"
+                android:layout_width="18dip"
+                android:layout_height="18dip"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/content_icon_free_def"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/c2"
+                android:layout_width="18dip"
+                android:layout_height="18dip"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/content_icon_sale_def"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/c3"
+                android:layout_width="18dip"
+                android:layout_height="18dip"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/content_icon_discout_def"
+                android:scaleType="centerInside"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dip"
+            android:layout_marginRight="18dip"
+            android:textColor="@color/itry_list_dome_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:layout_marginTop="12dip"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/content_icon_map_def"
+            android:drawablePadding="5dip"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/itry_list_goods_name" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="15dip"
+            android:background="@color/line" />
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_margin="20dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/content_icon_call_def" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_marginTop="12dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dip"
+        android:singleLine="true"
+        android:text="@string/doing"
+        android:textColor="@color/itry_list_goods_name" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="20dip"
+        android:background="@color/line" />
+
+    <com.aibaide.xuanbao.refresh.SListViewLayout
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

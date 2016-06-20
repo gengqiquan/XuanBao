@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="52dp"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.aibaide.xuanbao.views.RoundImageView
+        android:id="@+id/photo"
+        android:layout_width="28dip"
+        android:layout_height="28dip"
+        android:layout_marginTop="8dip" >
+    </com.aibaide.xuanbao.views.RoundImageView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginTop="5dip"
+        android:textColor="@color/itry_list_dome_color"
+        android:textSize="7sp" />
+
+</LinearLayout>

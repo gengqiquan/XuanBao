@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/img_no_goods"
+        android:scaleType="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/trun"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="暂无数据"
+        android:textColor="@color/itry_list_dome_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/trun"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/img_roung_bt_back"
+        android:gravity="center"
+        android:text="去逛逛吧"
+        android:textColor="@color/itry_list_dome_color"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

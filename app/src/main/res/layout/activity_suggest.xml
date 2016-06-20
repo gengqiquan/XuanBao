@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:layout_marginTop="12dip"
+        android:background="@color/white"
+        android:gravity="top|left"
+        android:hint="请输入意见"
+        android:padding="5dip"
+        android:textColor="@color/itry_list_dome_color"
+        android:textColorHint="@color/itry_list_dome_color"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/taste_guild"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:layout_marginTop="12dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dip"
+            android:text="常见问题"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="7dip"
+            android:layout_height="16dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/arrow2right_gray_small" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:layout_marginTop="12dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dip"
+            android:text="超级客服"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="400-0808-544"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:layout_marginTop="12dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dip"
+            android:text="微信公众号"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="woshishi_app"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

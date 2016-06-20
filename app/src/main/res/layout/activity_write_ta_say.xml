@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dip"
+                android:layout_marginTop="12dip"
+                android:background="@color/white" >
+
+                <com.aibaide.xuanbao.image.NetImageView
+                    android:id="@+id/goods_img"
+                    android:layout_width="84dip"
+                    android:layout_height="84dip"
+                    android:layout_marginLeft="12dip"
+                    android:layout_marginTop="10dip"
+                    android:scaleType="centerCrop" >
+                </com.aibaide.xuanbao.image.NetImageView>
+
+                <TextView
+                    android:id="@+id/goods_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="106dip"
+                    android:layout_marginTop="8dip"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/itry_list_goods_name"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/goods_format"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="106dip"
+                    android:layout_marginTop="30dip"
+                    android:textColor="@color/itry_list_dome_color"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/goods_integral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginLeft="106dip"
+                    android:textColor="@color/itry_list_dome_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginLeft="155dip"
+                    android:textColor="@color/itry_list_dome_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/goods_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="8dip"
+                    android:layout_marginRight="10dip"
+                    android:textColor="@color/itry_list_dome_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="8dip"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dip"
+                    android:text="商品评分"
+                    android:textColor="@color/itry_list_goods_name"
+                    android:textSize="15sp" />
+
+                <RatingBar
+                    android:id="@+id/ratingbar"
+                    style="@style/RatingBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dip"
+                    android:layout_marginLeft="25dip"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:stepSize="1" />
+
+                <TextView
+                    android:id="@+id/point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dip"
+                    android:textColor="@color/itry_list_dome_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/report_bt"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginTop="8dip"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/report_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dip"
+                    android:text="请填写体验报告"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <View
+                    android:id="@+id/report_img"
+                    android:layout_width="25dip"
+                    android:layout_height="25dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dip"
+                    android:background="@drawable/icon_report_no" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                android:layout_marginTop="8dip"
+                android:background="@color/white"
+                android:gravity="top|left"
+                android:hint="@string/input_your_tasay"
+                android:paddingBottom="12dip"
+                android:paddingLeft="25dip"
+                android:paddingRight="25dip"
+                android:paddingTop="12dip"
+                android:textColor="@color/itry_list_goods_name"
+                android:textColorHint="@color/itry_list_dome_color"
+                android:textSize="13dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="5dip"
+                android:text="请在wifi环境下上传图片"
+                android:textColor="@color/itry_list_dome_color"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/img_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="160dip"
+                android:layout_marginTop="8dip"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/bt_sure"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:background="@drawable/round_blue_back"
+            android:gravity="center"
+            android:text="提 交"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

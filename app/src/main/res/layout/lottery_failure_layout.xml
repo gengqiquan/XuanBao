@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/lotter_failure"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/success_back5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/clound_down" />
+
+    <ImageView
+        android:id="@+id/success_back4"
+        android:layout_width="61dip"
+        android:layout_height="37dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/clound4" />
+
+    <ImageView
+        android:id="@+id/success_back3"
+        android:layout_width="149dip"
+        android:layout_height="78dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/clound3" />
+
+    <ImageView
+        android:id="@+id/success_back2"
+        android:layout_width="165dip"
+        android:layout_height="100dip"
+        android:layout_marginTop="78dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/clound2" />
+
+    <ImageView
+        android:id="@+id/success_back55"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/clound_down" />
+
+    <ImageView
+        android:id="@+id/success_back44"
+        android:layout_width="61dip"
+        android:layout_height="37dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/clound4" />
+
+    <ImageView
+        android:id="@+id/success_back33"
+        android:layout_width="149dip"
+        android:layout_height="78dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/clound3" />
+
+    <ImageView
+        android:id="@+id/success_back22"
+        android:layout_width="165dip"
+        android:layout_height="100dip"
+        android:layout_marginTop="78dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/clound2" />
+
+    <ImageView
+        android:id="@+id/success_back1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:scaleType="centerInside"
+        android:src="@drawable/clound1" />
+
+    <TextView
+        android:id="@+id/bt_sure"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="即刻分享，再来一次"
+        android:background="@drawable/dialog_failure_bt_back"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

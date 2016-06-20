@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/talayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/goods_type_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:textColor="@color/tab_base"
+            android:textSize="14sp" />
+
+        <com.aibaide.xuanbao.views.NoScrollGridView
+            android:id="@+id/goods_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="10dip"
+            android:horizontalSpacing="2dip"
+            android:listSelector="@null"
+            android:numColumns="4"
+            android:verticalSpacing="2dip" >
+        </com.aibaide.xuanbao.views.NoScrollGridView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dip" />
+
+</LinearLayout>

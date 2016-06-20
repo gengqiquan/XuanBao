@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.aibaide.xuanbao.views.UnScrollRecyclerView
+        android:id="@+id/recyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="88dp"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/bt_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="12dp"
+        android:drawableRight="@drawable/arrow_next"
+        android:text="下一步"
+        android:textColor="@color/gold_gray"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="12dp"
+        android:text="提  交"
+        android:textColor="@color/gold_gray"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progress1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="37dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:progressDrawable="@drawable/progress_dayday_answer_back" />
+
+    <RelativeLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/background" >
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/img_answereverday_back" />
+    </RelativeLayout>
+
+</RelativeLayout>

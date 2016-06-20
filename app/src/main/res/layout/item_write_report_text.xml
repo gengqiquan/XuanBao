@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@color/white" >
+
+        <EditText
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@null"
+            android:hint="说点什么......"
+            android:minHeight="60dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:textColorHint="@color/gray9"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/add"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/icon_add2" />
+
+    <View
+        android:id="@+id/delete"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/icon_delete2" />
+
+</RelativeLayout>

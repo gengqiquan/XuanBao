@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/left"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/arrow2left_blue" />
+
+        <TextView
+            android:id="@+id/goods"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="收藏的商品"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tasay"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="收藏的Ta说"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/edit"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="@color/tab_check"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+    <com.aibaide.xuanbao.views.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </com.aibaide.xuanbao.views.NoScrollViewPager>
+
+</LinearLayout>

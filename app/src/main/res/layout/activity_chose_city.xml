@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="22dip"
+        android:text="定位到当前"
+        android:textColor="@color/itry_list_goods_name"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:gravity="center_vertical"
+        android:text="热门城市"
+        android:paddingLeft="15dip"
+        android:textColor="@color/itry_list_goods_name"
+        android:textSize="15sp" />
+
+    <com.aibaide.xuanbao.views.NoScrollGridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="10dip"
+        android:horizontalSpacing="15dip"
+        android:listSelector="@null"
+        android:numColumns="3" >
+    </com.aibaide.xuanbao.views.NoScrollGridView>
+
+</LinearLayout>

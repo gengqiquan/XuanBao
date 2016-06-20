@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="100dip"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/goods_point"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="8dip"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/goods_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dip"
+            android:layout_marginLeft="20dip"
+            android:textColor="@color/itry_list_dome_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/goods_integral"
+            android:layout_marginBottom="3dip"
+            android:layout_marginLeft="20dip"
+            android:textColor="@color/itry_list_dome_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <com.qbs.itrytryc.image.NetImageView
+        android:id="@+id/goods_img"
+        android:layout_width="match_parent"
+        android:layout_height="180dip"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dip"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dip"
+            android:gravity="center_vertical"
+            android:text="数量总数"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/num1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/tab_check"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="20dip"
+            android:layout_marginTop="6dip"
+            android:background="@color/line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dip"
+            android:gravity="center_vertical"
+            android:text="参与人数"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/tab_check"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="20dip"
+            android:layout_marginTop="6dip"
+            android:background="@color/line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dip"
+            android:gravity="center_vertical"
+            android:text="Ta说总数"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/num3"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/tab_check"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dip" />
+
+</LinearLayout>

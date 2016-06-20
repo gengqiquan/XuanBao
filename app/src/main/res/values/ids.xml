@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="mTabTitleBarID" type="id">102030</item>
+    <item name="SlidingFixTabView_viewpagerid" type="id">5056</item>
+    <item name="SlidingSmoothTabView_viewpagerid" type="id">5055</item>
+    <item name="TurnView_viewpagerid" type="id">5054</item>
+    <item name="SlidTabViewPager_viewpagerid" type="id">5053</item>
+    <item name="GoodsDetailActivity_HOUSE" type="id">5052</item>
+    <item name="GoodsDetailActivity_SHARE" type="id">5051</item>
+    <item name="CONTENT_VIEW_ID" type="id">5050</item>
+    <item name="MENU_VIEW_ID" type="id">5049</item>
+</resources>

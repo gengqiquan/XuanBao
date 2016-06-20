@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="108dip"
+            android:layout_marginTop="8dp"
+            android:background="@color/white" >
+
+            <com.aibaide.xuanbao.image.NetImageView
+                android:id="@+id/img"
+                android:layout_width="84dip"
+                android:layout_height="84dip"
+                android:layout_marginLeft="12dip"
+                android:layout_marginTop="12dip"
+                android:scaleType="centerCrop" >
+            </com.aibaide.xuanbao.image.NetImageView>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="106dip"
+                android:layout_marginTop="8dip"
+                android:textColor="@color/itry_list_goods_name"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="106dip"
+                android:layout_marginTop="30dip"
+                android:textColor="@color/itry_list_dome_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="106dip"
+                android:textColor="@color/tab_check"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="7dp"
+                android:layout_height="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/arrow2right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:drawableLeft="@drawable/icon_point_blue"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="商品评分"
+                android:textColor="@color/gray4"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/lable"
+                android:textColor="@color/tab_check"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line" />
+
+        <com.aibaide.xuanbao.views.ScoreView
+            android:id="@+id/scoreview"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/lable2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:drawableLeft="@drawable/icon_point_blue"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="Ta说总数"
+                android:textColor="@color/gray4"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/lable2"
+                android:textColor="@color/tab_check"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="234dp"
+            android:background="@color/white" >
+
+            <View
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/img_report_back" />
+
+            <TextView
+                android:id="@+id/zan_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="160dp"
+                android:textColor="@color/gray6"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/comment_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/gray6"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/house_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="190dp"
+                android:textColor="@color/gray6"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:text="阅读量前三名"
+                android:textColor="@color/gray4"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <com.aibaide.xuanbao.views.LineChartView
+            android:id="@+id/linechart"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="@color/white" />
+    </LinearLayout>
+
+</ScrollView>

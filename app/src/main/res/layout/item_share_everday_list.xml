@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="277dp"
+   >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="269dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white" />
+
+    <com.aibaide.xuanbao.image.NetImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/integral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/tab_check"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:drawablePadding="5dp"
+        android:layout_marginRight="16dip"
+        android:drawableLeft="@drawable/icon_share_gray"
+        android:textColor="@color/gray8"
+        android:textSize="14sp" />
+
+</RelativeLayout>

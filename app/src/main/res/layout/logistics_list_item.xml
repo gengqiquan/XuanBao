@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="57dp"
+    android:background="@color/white" >
+
+    <View
+        android:id="@+id/line_short"
+        android:layout_width="0.5dp"
+        android:layout_height="12dp"
+        android:layout_marginLeft="29dp"
+        android:background="@color/login_def_color" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="12dp" />
+
+    <View
+        android:id="@+id/dots"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="58dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="58dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="2"
+        android:text="物流追踪司法局开始能分开件哈伦裤是否会卡机是否看见俺还是浪费哈桑路返回拉还是发空间哈萨克减肥哈快速减肥"
+        android:textColor="@color/itry_list_goods_name"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="10dp"
+        android:text="2015-12-25 13:48:28"
+        android:textColor="@color/itry_list_goods_name"
+        android:textSize="9sp" />
+
+</RelativeLayout>

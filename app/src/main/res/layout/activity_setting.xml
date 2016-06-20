@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/alter_password"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:layout_marginTop="8dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dip"
+            android:text="@string/alter_password"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="7dip"
+            android:layout_height="16dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/arrow2right_gray_small" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:layout_marginTop="8dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dip"
+            android:text="@string/help"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="7dip"
+            android:layout_height="16dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/arrow2right_gray_small" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:background="@color/white" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="15dip"
+            android:background="@color/line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dip"
+            android:text="@string/about"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="7dip"
+            android:layout_height="16dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/arrow2right_gray_small" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/exit_login"
+        android:layout_width="match_parent"
+        android:layout_height="44dip"
+        android:layout_marginTop="8dip"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/exit_login"
+            android:textColor="@color/itry_list_goods_name"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>
