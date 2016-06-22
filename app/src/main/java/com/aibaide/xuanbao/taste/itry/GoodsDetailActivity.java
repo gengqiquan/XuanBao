@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.webkit.WebView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -45,6 +46,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+
 public class GoodsDetailActivity extends BaseActivity {
     RecyclerView mWinList;
     LinearLayoutManager layoutManager;
@@ -52,7 +57,7 @@ public class GoodsDetailActivity extends BaseActivity {
     RelativeLayout mWinUser;
     TurnView mTurnView;
     List<ImageBean> list;
-    TextView mName, mPrice, mIntroduce, mMarket, mBtNext;
+    TextView mName, mPrice, mIntroduce, mMarket;
     RelativeLayout mBtMarket;
     String mLineID;
     // 收藏图标
@@ -63,11 +68,18 @@ public class GoodsDetailActivity extends BaseActivity {
     WebView webView;
     TextView mWebBT;
     FlexTextView mGetIntrduce;
+    @BindView(R.id.getself)
+    TextView getself;
+    @BindView(R.id.send)
+    TextView send;
+    @BindView(R.id.bottom_layout)
+    LinearLayout mBottomLayout;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_goods_detail);
+        ButterKnife.bind(this);
         mTabTitleBar.setTile(R.string.goods_detail);
         mTabTitleBar.showLeft();
         mLineID = getIntent().getStringExtra("lineID");
@@ -120,7 +132,6 @@ public class GoodsDetailActivity extends BaseActivity {
         mGetIntrduce = (FlexTextView) mContentView.findViewById(R.id.goods_get_intrduce);
         mWebBT = (TextView) mContentView.findViewById(R.id.web_path);
         mBtMarket = (RelativeLayout) mContentView.findViewById(R.id.goods_market);
-        mBtNext = (TextView) mContentView.findViewById(R.id.goods_next_bt);
         mWinList = (RecyclerView) mContentView.findViewById(R.id.win_list);
         layoutManager = new LinearLayoutManager(mContext);
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
@@ -303,44 +314,9 @@ public class GoodsDetailActivity extends BaseActivity {
             mWebBT.setVisibility(View.VISIBLE);
             mWebBT.setText(mBean.getUrlName());
         }
-        mBtNext.setText("下一步：" + mBean.getGoodsPoint() + "积分");
-        switch (mBean.getDownLine()) {
-            case 0:
-                mBtNext.setText("已结束");
-                mBtNext.setClickable(false);
-                break;
-            case 1:
-                if (mBean.getGoodsSurplusNum() == 0) {
-                    mBtNext.setText("已结束");
-                    mBtNext.setClickable(false);
-                } else {
-                    mBtNext.setOnClickListener(clickListener);
-                }
-                break;
-            case 2:
-                if (mBean.getTstate() == 1) {
-                    mBtNext.setText("敬请关注");
-                } else {
-                    mBtNext.setText("为您提醒：" + mBean.getGoodsPoint() + "积分");
-                    mBtNext.setOnClickListener(new OnClickListener() {
 
-                        @Override
-                        public void onClick(View v) {
-                            new LoginUtil() {
-
-                                @Override
-                                public void loginForCallBack() {
-                                    Util.remind(mLineID, mBtNext, "1");
-                                }
-                            }.checkLoginForCallBack(mContext);
-                        }
-                    });
-
-                }
-                break;
-
-            default:
-                break;
+        if (mBean.getGoodsSurplusNum() == 0) {
+            mBottomLayout.setVisibility(View.GONE);
         }
         if (mBean.getCstate() == 1) {
             mHouse.setBackground(getResources().getDrawable(R.drawable.icon_heart_check));
@@ -368,6 +344,37 @@ public class GoodsDetailActivity extends BaseActivity {
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
+        }
+    }
+
+    @OnClick({R.id.getself, R.id.send})
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.getself:
+                if (mBean.getGoodsSurplusNum() == 0) {
+
+
+                }
+                new LoginUtil() {
+
+                    @Override
+                    public void loginForCallBack() {
+                        startActivity(new Intent(mContext, GetMethodActivity.class).putExtra("mGoodsDetailBean", mBean));
+                    }
+                }.checkLoginForCallBack(mContext);
+                break;
+            case R.id.send:
+                new LoginUtil() {
+
+                    @Override
+                    public void loginForCallBack() {
+                        Intent intent = new Intent(mContext, SendActivity.class);
+                        intent.putExtra("mGoodsDetailBean", mBean);
+                        startActivity(intent);
+                    }
+                }.checkLoginForCallBack(mContext);
+
+                break;
         }
     }
 }

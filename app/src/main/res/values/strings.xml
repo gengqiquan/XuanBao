@@ -3,7 +3,8 @@
     <string name="app_name">炫宝</string>
     <string name="sever_error">服务器异常，请稍后再试</string>
     <string name="i_try_try">炫宝</string>
-    <string name="my_order">我的订单</string>
+    <string name="my_order">我的领取</string>
+    <string name="my_profit">我的收益</string>
     <string name="order_detail">订单详情</string>
     <string name="ta_say_goods_list">Ta说商品列表</string>
     <string name="back_itry">返回尝鲜</string>
