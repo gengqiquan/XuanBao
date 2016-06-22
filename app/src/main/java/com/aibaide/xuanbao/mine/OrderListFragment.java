@@ -51,7 +51,6 @@ public class OrderListFragment extends BaseFragment {
 
 	@SuppressWarnings("unchecked")
 	private void initViews() {
-
 		mType = getArguments().getInt("type");
 
 		initViews();
