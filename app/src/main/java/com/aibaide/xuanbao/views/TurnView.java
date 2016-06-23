@@ -2,7 +2,6 @@ package com.aibaide.xuanbao.views;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
@@ -19,14 +18,9 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import com.aibaide.xuanbao.R;
-import com.aibaide.xuanbao.base.WebViewActivity;
 import com.aibaide.xuanbao.bean.ImageBean;
 import com.aibaide.xuanbao.image.NetImageView;
-import com.aibaide.xuanbao.taste.exercise.ExerciseDetailActivity;
-import com.aibaide.xuanbao.taste.itry.GoodsDetailActivity;
-import com.aibaide.xuanbao.taste.virtual.VirtualDetailActivity;
 import com.sunshine.utils.DensityUtils;
-import com.sunshine.utils.Util;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -182,24 +176,24 @@ public class TurnView extends RelativeLayout {
 
 					@Override
 					public void onClick(View v) {
-						switch (datalist.get(m).getFileBelong()) {
-						case 9:
-							if (!Util.checkNULL(datalist.get(m).getWeburl()))
-								mContext.startActivity(new Intent(mContext, WebViewActivity.class).putExtra("url", datalist.get(m).getWeburl()));
-							break;
-						case 6:
-							mContext.startActivity(new Intent(mContext, GoodsDetailActivity.class).putExtra("lineID", datalist.get(m).getForid() + ""));
-							break;
-						case 15:
-							mContext.startActivity(new Intent(mContext, ExerciseDetailActivity.class).putExtra("lineID", datalist.get(m).getForid() + ""));
-							break;
-						case 18:
-							mContext.startActivity(new Intent(mContext, VirtualDetailActivity.class).putExtra("lineID", datalist.get(m).getForid() + ""));
-							break;
-
-						default:
-							break;
-						}
+//						switch (datalist.get(m).getFileBelong()) {
+//						case 9:
+//							if (!Util.checkNULL(datalist.get(m).getWeburl()))
+//								mContext.startActivity(new Intent(mContext, WebViewActivity.class).putExtra("url", datalist.get(m).getWeburl()));
+//							break;
+//						case 6:
+//							mContext.startActivity(new Intent(mContext, GoodsDetailActivity.class).putExtra("lineID", datalist.get(m).getForid() + ""));
+//							break;
+//						case 15:
+//							mContext.startActivity(new Intent(mContext, ExerciseDetailActivity.class).putExtra("lineID", datalist.get(m).getForid() + ""));
+//							break;
+//						case 18:
+//							mContext.startActivity(new Intent(mContext, VirtualDetailActivity.class).putExtra("lineID", datalist.get(m).getForid() + ""));
+//							break;
+//
+//						default:
+//							break;
+//						}
 					}
 				});
 

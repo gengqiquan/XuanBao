@@ -39,7 +39,7 @@ public class TasteFragment extends BaseFragment {
     long mNow = -1;
     SlidTabViewPager mSlid;
 
-    @SuppressLint("InflateParams")
+
     @Override
     public View onCreateContentView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         mContentView = LayoutInflater.from(mContext).inflate(R.layout.frag_taste, null);
@@ -85,8 +85,11 @@ public class TasteFragment extends BaseFragment {
             Fragment fragment = new ITryFragment();
             Bundle bundle = new Bundle();
             bundle.putString("uid", list.get(i).getClassId() + "");
+            if (i == 0) {
+                bundle.putBoolean("home", true);
+            }
             fragment.setArguments(bundle);
-            fragment.setTargetFragment(this, 0);
+            fragment.setTargetFragment(this, i);
             fragments.add(fragment);
         }
         mSlid.addItems(strings, fragments);
@@ -107,7 +110,6 @@ public class TasteFragment extends BaseFragment {
         mSlid.setTabColor(R.color.tab_check, R.color.itry_list_dome_color);
         mSlid.setFM(getChildFragmentManager());
     }
-
 
 
     OnClickListener clickListener = new OnClickListener() {

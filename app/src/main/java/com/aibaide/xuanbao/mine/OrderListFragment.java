@@ -49,11 +49,9 @@ public class OrderListFragment extends BaseFragment {
 	}
 
 
-	@SuppressWarnings("unchecked")
+
 	private void initViews() {
 		mType = getArguments().getInt("type");
-
-		initViews();
 		loadData(true);
 		mListLayout = (SListViewLayout<OrderBean>) mContentView.findViewById(R.id.listview);
 		mListLayout.setNoDataImgRes(R.drawable.img_no_order);

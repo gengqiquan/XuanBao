@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -41,9 +42,9 @@ public class MineFragment extends BaseFragment {
     View mMessage, mArrow;
     TextView msgNumber;
     @BindView(R.id.my_order)
-    TextView myOrder;
+    LinearLayout myOrder;
     @BindView(R.id.my_profit)
-    TextView myProfit;
+    LinearLayout myProfit;
 
     @Override
     public View onCreateContentView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
