@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.view.textservice.TextInfo;
 
 import com.aibaide.xuanbao.R;
 import com.aibaide.xuanbao.base.BaseFragment;
@@ -55,6 +56,7 @@ public class ITryFragment extends BaseFragment {
     @SuppressWarnings("unchecked")
     @SuppressLint("InflateParams")
     private void initViews() {
+
         mListLayout = (SListViewLayout<GoodsBean>) mContentView.findViewById(R.id.listview);
         mListLayout.setAdapter(new SBaseAdapter<GoodsBean>(mContext, R.layout.item_itry_listview) {
 
@@ -116,7 +118,7 @@ public class ITryFragment extends BaseFragment {
 
     }
 
-    boolean isDown = true;
+
 
     private void loadData(final boolean isRefresh) {
         if (isRefresh)
