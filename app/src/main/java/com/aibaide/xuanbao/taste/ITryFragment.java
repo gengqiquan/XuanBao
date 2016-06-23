@@ -119,7 +119,7 @@ public class ITryFragment extends BaseFragment {
     }
 
 
-
+int check=0;
     private void loadData(final boolean isRefresh) {
         if (isRefresh)
             mPager = 1;
